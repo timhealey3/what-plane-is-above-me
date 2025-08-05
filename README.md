@@ -1,5 +1,5 @@
 ## What plane is above me?
-Ever ask yourself this question? I do, at least once a day. Fear not—the days of checking the radar app are over! This API will automatically display what planes are above you at any given moment.
+"What plane is that" Ever ask yourself this question? I do, at least once a day. Fear not, the days of checking the radar app are over! This API will automatically display what planes are above you at any given moment.
 
 ## How to use it
 Currently, this can only be used locally. You can run it with [uvicorn](https://www.uvicorn.org/):
