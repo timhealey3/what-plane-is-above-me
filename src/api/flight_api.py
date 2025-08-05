@@ -1,6 +1,6 @@
 
-from API_Services.dataclasses.location import Location
-from API_Services.dataclasses.plane import Plane
+from src.api.dataclasses.location import Location
+from src.api.dataclasses.plane import Plane
 from dataclasses import asdict
 from fastapi import FastAPI
 import requests
@@ -25,7 +25,7 @@ def get_flights():
         json_response = response.json()
         plane = Plane(tailNumber=json_response["registration"], make=json_response["manufacturerName"], model=json_response["model"], owner=json_response["owner"])
         planes.append(plane)
-    return json.dumps([asdict(p) for p in planes])
+    return [asdict(p) for p in planes]
 
 def getLocationData():
     response = requests.get(location_url)

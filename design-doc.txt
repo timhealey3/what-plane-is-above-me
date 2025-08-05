@@ -1,5 +1,0 @@
-
-Location API?
- - get location from user
-Radar API?
- - get planes from location
